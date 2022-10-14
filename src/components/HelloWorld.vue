@@ -1,7 +1,5 @@
 <template>
-  <div class="row">
-    .col
-  </div>
+  
 </template>
 
 <script>
