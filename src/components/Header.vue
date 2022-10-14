@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="header-top">
-      <div class="mx-auto">
+      <div class="header-top-in">
         <div class="grid grid-cols-8 justify-center">
           <div
             class="
@@ -114,9 +114,13 @@ export default {
 
 <style scoped>
 .header-top {
-  max-width: 1700px;
+  max-width: 1920px;
   margin: 0 auto;
   padding: 20px 30px;
+}
+.header-top-in{
+  max-width: 1700px;
+  margin: 0 auto;
 }
 .header-link a {
   font-family: "Roboto";
