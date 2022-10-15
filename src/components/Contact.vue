@@ -2,7 +2,7 @@
   <div id="contact" class="mx-auto">
     <h1 class="text-center">Начните сейчас</h1>
     <p class="text-center">Быстрая регистрация за 1 минуту</p>
-    <router-link class="block text-center mx-auto registration" to="#"
+    <router-link class="block text-center mx-auto registration" to="/"
       >Зарегистрироваться</router-link
     >
     <div class="contact_in mx-auto">
@@ -13,13 +13,15 @@
           помочь
         </p>
       </div>
-      <div class="contact_in_right">
-        <img src="/img/money_telegram.svg" />
-        <div class="contact_in_right_text">
-          <h5>Мы в Telegram</h5>
-          <p>Отвечаем быстро</p>
+      <a href="#">
+        <div class="contact_in_right">
+          <img src="/img/money_telegram.svg" />
+          <div class="contact_in_right_text">
+            <h5>Мы в Telegram</h5>
+            <p>Отвечаем быстро</p>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
     <div class="pbg_img_position">
       <img class="img_1" src="/img/1.svg" />
@@ -174,6 +176,7 @@
   line-height: 145.03%;
   color: #8aa0b4;
   max-width: 447px;
+  text-align: left;
 }
 #contact .contact_in .contact_in_left h5 {
   font-family: "Open Sans", sans-serif;
@@ -210,16 +213,16 @@
 }
 
 @media (max-width: 1600px) {
-    #contact .pbg_img_position .img_7 {
-  position: absolute;
-  z-index: 0;
-  top: 800px;
-  left: 150px;
-}
-    #contact .pbg_img_position .img_12 {
-  position: absolute;
-  top: 828px;
-  right: 200px;
-}
+  #contact .pbg_img_position .img_7 {
+    position: absolute;
+    z-index: 0;
+    top: 800px;
+    left: 150px;
+  }
+  #contact .pbg_img_position .img_12 {
+    position: absolute;
+    top: 828px;
+    right: 200px;
+  }
 }
 </style>
