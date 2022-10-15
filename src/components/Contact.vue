@@ -74,7 +74,7 @@
 }
 #contact .pbg_img_position .img_7 {
   position: absolute;
-  z-index: 2;
+  z-index: 0;
   top: 800px;
   left: 340px;
 }
@@ -212,7 +212,7 @@
 @media (max-width: 1600px) {
     #contact .pbg_img_position .img_7 {
   position: absolute;
-  z-index: 2;
+  z-index: 0;
   top: 800px;
   left: 150px;
 }
