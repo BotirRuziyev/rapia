@@ -29,49 +29,54 @@
       </div>
     </div>
     <!-- counter up start -->
-      <div class="count_money_wrapper">
-        <div class="count_money_in">
-            <div>
-                <h1>$<ICountUp
-      :delay="delay"
-      :endVal="endVal1"
-      :options="options"
-      @ready="onReady"
-    /></h1>
-                <p>Oбьем торгов за 7 день</p>
-            </div>
-            <div>
-                <h1>$<ICountUp
-      :delay="delay"
-      :endVal="endVal2"
-      :options="options"
-      @ready="onReady2"
-    /></h1>
-                <p>Oбьем торгов за день</p>
-            </div>
-            <div>
-                <h1><ICountUp
-      :delay="delay"
-      :endVal="endVal3"
-      :options="options"
-      @ready="onReady3"
-    /></h1>
-                <p>активных трейдеров</p>
-            </div>
+    <div class="count_money_wrapper">
+      <div class="count_money_in">
+        <div>
+          <h1>
+            $<ICountUp
+              :delay="delay"
+              :endVal="endVal1"
+              :options="options"
+              @ready="onReady"
+            />
+          </h1>
+          <p>Oбьем торгов за 7 день</p>
+        </div>
+        <div>
+          <h1>
+            $<ICountUp
+              :delay="delay"
+              :endVal="endVal2"
+              :options="options"
+              @ready="onReady2"
+            />
+          </h1>
+          <p>Oбьем торгов за день</p>
+        </div>
+        <div>
+          <h1>
+            <ICountUp
+              :delay="delay"
+              :endVal="endVal3"
+              :options="options"
+              @ready="onReady3"
+            />
+          </h1>
+          <p>активных трейдеров</p>
         </div>
       </div>
+    </div>
   </div>
 </template>
 
 <script>
 import ICountUp from "vue-countup-v2";
 export default {
-    components: {
+  components: {
     ICountUp,
   },
-    data() {
+  data() {
     return {
-
       delay: 1000,
       endVal1: 7764002,
       endVal2: 921545,
@@ -100,14 +105,14 @@ export default {
       instance.update(that.endVal3);
     },
   },
-}
+};
 </script>
 
-<style>
+<style scoped>
 .money-big-wrapper {
   max-width: 1920px;
-  padding: 0 180px !important;
   margin-top: 150px;
+  padding: 0 30px;
 }
 .zadacha {
   text-align: center;
@@ -120,7 +125,7 @@ export default {
   margin-top: 5px;
 }
 .money-wrapper {
-  max-width: 1539px;
+  max-width: 1700px;
   margin: 0 auto;
   display: block;
   background: #ffffff;
@@ -140,7 +145,7 @@ export default {
   max-width: 450px;
 }
 .money-bottom-wrapper {
-  max-width: 1539px;
+  max-width: 1700px;
 }
 .money-bottom {
   padding: 70px 87px;
@@ -221,42 +226,46 @@ export default {
 .count_money_wrapper {
   margin-top: 120px;
   width: 100%;
-  height: 269px;
+  padding: 18px 0;
   background: #1e2022;
-  padding: 0 100px;
 }
-.count_money_wrapper .count_money_in{
-    height: 100%;
-    max-width: 1708px;
-    padding: auto 150px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.count_money_wrapper .count_money_in div h1{
-    color: #fff;
-    font-size: 65px;
-    font-weight: 700;
-
+.count_money_wrapper .count_money_in {
+  width: 100%;
+  max-width: 1700px;
+  padding: auto 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  background-image: url('/public/img/bg_dollor.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  padding: 18px 0;
 }
 
-.count_money_wrapper .count_money_in div p{
-    color: #fff;
-    opacity: 0.5;
-    text-align: center;
-    font-size: 22px;
+.count_money_wrapper .count_money_in div h1 {
+  color: #fff;
+  font-size: 65px;
+  font-weight: 700;
+}
+
+.count_money_wrapper .count_money_in div p {
+  color: #fff;
+  opacity: 0.5;
+  text-align: center;
+  font-size: 22px;
 }
 
 @media (max-width: 1600px) {
-     .money-big-wrapper{
-        margin-top: 100px;
-    }
+  .money-big-wrapper {
+    margin-top: 100px;
+  }
   .money-item .money_text_img {
     max-width: 360px;
     padding-left: 40px;
   }
-  .money-bottom{
+  .money-bottom {
     height: 500px;
   }
   .money-bottom .money-text h1 {
@@ -277,7 +286,7 @@ export default {
   .money-bottom .money-text a {
     font-size: 30px;
   }
-  .money-bottom .money-text p{
+  .money-bottom .money-text p {
     margin-bottom: 60px !important;
   }
 }

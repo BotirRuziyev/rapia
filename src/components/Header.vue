@@ -29,7 +29,7 @@
               <div class="dropdown__skeleton flex items-center">
                 <div class="dropdown__selected dropdown__option">
                   <img
-                    src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/flag-for-united-kingdom_1f1ec-1f1e7.png"
+                    src="/img/rus-flag.svg"
                     alt="United Kingdom"
                   /><span>Русский</span>
                 </div>
@@ -38,12 +38,6 @@
               </div>
 
               <div class="dropdown__options">
-                <div class="dropdown__option dropdown__option--selected">
-                  <img
-                    src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/flag-for-united-kingdom_1f1ec-1f1e7.png"
-                    alt="United Kingdom"
-                  /><span>United Kingdom</span>
-                </div>
 
                 <div class="dropdown__option">
                   <img
@@ -51,26 +45,11 @@
                     alt="U.S."
                   /><span>U.S.</span>
                 </div>
-
                 <div class="dropdown__option">
                   <img
-                    src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/flag-for-france_1f1eb-1f1f7.png"
-                    alt="France"
-                  /><span>France</span>
-                </div>
-
-                <div class="dropdown__option">
-                  <img
-                    src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/flag-for-spain_1f1ea-1f1f8.png"
-                    alt="Spain"
-                  /><span>Spain</span>
-                </div>
-
-                <div class="dropdown__option">
-                  <img
-                    src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/flag-for-germany_1f1e9-1f1ea.png"
-                    alt="Germany"
-                  /><span>Germany</span>
+                    src="/img/rus-flag.svg"
+                    alt="United Kingdom"
+                  /><span>Русский</span>
                 </div>
               </div>
             </div>
@@ -117,6 +96,8 @@ export default {
   max-width: 1920px;
   margin: 0 auto;
   padding: 20px 30px;
+  position: relative;
+  z-index: 2;
 }
 .header-top-in{
   max-width: 1700px;
@@ -213,15 +194,15 @@ export default {
 }
 .dropdown__options {
   position: absolute;
-  top: 90%;
-  right: 13px;
+  top: 110%;
+  right: 0;
   border: 2px solid #dbe0f5;
   border-radius: 5px;
   padding: 20px 10px;
   background-color: #fff;
-  width: 280px;
   transform: scale(0);
   z-index: 1;
+  margin-top: 10px;
 }
 @keyframes showit {
   0% {
@@ -288,5 +269,7 @@ export default {
   color: #535353;
   background: rgba(255, 255, 255, 0.2);
   padding: 10px 0;
+  position: relative;
+  z-index: 2;
 }
 </style>
