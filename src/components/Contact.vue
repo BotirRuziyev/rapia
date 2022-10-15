@@ -119,6 +119,7 @@
   position: relative;
   max-width: 1920px;
   padding-bottom: 100px;
+  overflow: hidden;
 }
 #contact h1 {
   font-family: "Open Sans", sans-serif;
@@ -129,6 +130,8 @@
   letter-spacing: -0.02em;
   padding-bottom: 17px;
   padding-top: 250px;
+   position: relative;
+  z-index: 2;
 }
 #contact p {
   font-family: "Open Sans", sans-serif;
@@ -139,6 +142,8 @@
   text-align: center;
   letter-spacing: -0.02em;
   padding-bottom: 65px;
+   position: relative;
+  z-index: 2;
 }
 #contact .registration {
   font-family: "Open Sans", sans-serif;
@@ -154,6 +159,8 @@
   max-height: 62px;
   padding: 15px 30px;
   margin-bottom: 205px;
+  position: relative;
+  z-index: 2;
 }
 #contact .contact_in {
   position: relative;

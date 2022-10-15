@@ -66,6 +66,7 @@ footer {
   max-width: 1920px;
   margin: 0 auto;
   padding: 0 30px;
+  margin-top: 45px;
 }
 .foter-in {
   max-width: 1700px;

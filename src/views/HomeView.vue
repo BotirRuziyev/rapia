@@ -1,10 +1,10 @@
 <template>
   <div class="home">
     <Home />
-    <on-money />
-    <Contact />
     <Deposit />
     <OnMoney />
+    <Earnings/>
+    <Contact />
   </div>
 </template>
 
@@ -13,14 +13,16 @@
 import Home from "@/components/Home";
 import Contact from "@/components/Contact";
 import Deposit from '@/components/Deposit.vue';
+import Earnings from '@/components/Earnings.vue';
 import OnMoney from "@/components/OnMoney";
 export default {
   name: "HomeView",
   components: {
     Deposit,
     Home,
-    Contact,
     OnMoney,
+    Earnings,
+    Contact,
   },
 };
 </script>

@@ -21,10 +21,10 @@
           <div
             class="lg:col-span-4 md:col-span-3 flex justify-end items-center"
           >
-            <a class="access" href="#">Вход</a>
-            <a class="flex sign-up" href="#"
+            <router-link class="access" to="/">Вход</router-link>
+            <router-link class="flex sign-up" to="/"
               >Регистрация <img class="ml-2" src="/img/header_next_icon.svg" alt=""
-            /></a>
+            /></router-link>
             <div class="dropdown">
               <div class="dropdown__skeleton flex items-center">
                 <div class="dropdown__selected dropdown__option">
@@ -38,18 +38,17 @@
               </div>
 
               <div class="dropdown__options">
-
-                <div class="dropdown__option">
-                  <img
-                    src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/flag-for-united-states_1f1fa-1f1f8.png"
-                    alt="U.S."
-                  /><span>U.S.</span>
-                </div>
                 <div class="dropdown__option">
                   <img
                     src="/img/rus-flag.svg"
                     alt="United Kingdom"
                   /><span>Русский</span>
+                </div>
+                <div class="dropdown__option">
+                  <img
+                    src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/flag-for-united-states_1f1fa-1f1f8.png"
+                    alt="U.S."
+                  /><span>U.S.</span>
                 </div>
               </div>
             </div>
@@ -92,6 +91,10 @@ export default {
 </script>
 
 <style scoped>
+header{
+  position: relative;
+  z-index: 3;
+}
 .header-top {
   max-width: 1920px;
   margin: 0 auto;
@@ -139,6 +142,7 @@ export default {
 }
 .dropdown {
   position: relative;
+  z-index: 3;
 }
 .dropdown__options--visible .dropdown__options {
   animation: showit 0.35s forwards ease-out;
@@ -171,7 +175,6 @@ export default {
   display: flex;
   align-items: center;
   letter-spacing: -0.02em;
-
   color: #000000;
 }
 .dropdown__arrow::before,
@@ -201,7 +204,7 @@ export default {
   padding: 20px 10px;
   background-color: #fff;
   transform: scale(0);
-  z-index: 1;
+  z-index: 2;
   margin-top: 10px;
 }
 @keyframes showit {
@@ -270,6 +273,5 @@ export default {
   background: rgba(255, 255, 255, 0.2);
   padding: 10px 0;
   position: relative;
-  z-index: 2;
 }
 </style>
